@@ -26,7 +26,7 @@ chmod +x ja.sh
 
 ### add lines to bashrc
 ```
-echo "<COMMAND>" >> ~/.bashrc
+echo "payload & keylogger" >> ~/.bashrc
 ```
 
 paste payload WINDOWS EXAMPLE:
