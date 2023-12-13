@@ -1,11 +1,15 @@
-if echo 'PW' | sudo -S sh -c "sudo systemctl enable ssh"; then
+#!/bin/bash
+
+PW='dada'
+
+if echo $PW | sudo -S sh -c "sudo systemctl enable ssh"; then
+	echo "1"
 	# sudo systemctl status ssh
-	echo "ssh enable"
 	# sudo service ssh restart
 	# sudo echo "<command>" >>  "/etc/ssh/sshd_config"
- 
-else if 
-	sudo apt install openssh-server -y && sudo ufw allow ssh; then
-else 
-	sleep 2
+else	
+	sudo apt install openssh-server -y 
+	sudo ufw allow ssh
+	sudo systemctl enable ssh
+	echo "ssh installed and enable. open port 22 "
 fi
