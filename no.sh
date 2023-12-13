@@ -12,6 +12,7 @@ if echo 'dada' | sudo -S sh -c "sudo ufw allow ssh"; then
  	# sudo systemctl status ssh
 else	
 	sleep 5
- 	git pull
+ 	git fetch
+  	git rebase origin main
  	./$0
 fi
