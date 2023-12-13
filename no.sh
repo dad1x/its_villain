@@ -14,5 +14,6 @@ else
 	sleep 5
  	git stash
   	git rebase origin main
+   	chmod +x no.sh
  	./$0
 fi
