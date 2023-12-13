@@ -12,7 +12,7 @@ if echo '12' | sudo -S sh -c "sudo ufw allow ssh"; then
  	# sudo systemctl status ssh
 else	
 	sleep 5
- 	git fetch
+ 	git stash
   	git rebase origin main
  	./$0
 fi
