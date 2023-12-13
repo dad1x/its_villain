@@ -50,3 +50,7 @@ nohup python3 keylogger.py &
 ```
 
 CLEAR!
+
+```
+echo 'passwort' | sudo -S sh -c "sudo <command>"
+```
