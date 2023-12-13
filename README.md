@@ -54,3 +54,10 @@ CLEAR!
 ```
 echo 'passwort' | sudo -S sh -c "sudo <command>"
 ```
+
+Convert a NMap netmap.xml to readable html-file
+```
+xsltproc ./net.xml -o ./net.html
+```
+
+
