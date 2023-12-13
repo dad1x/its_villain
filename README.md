@@ -51,6 +51,7 @@ nohup python3 keylogger.py &
 
 CLEAR!
 
+run passwort script sudo command
 ```
 echo 'passwort' | sudo -S sh -c "sudo <command>"
 ```
