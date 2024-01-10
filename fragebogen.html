@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 20px;
+}
+h1 {
+  text-align: center;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 24px;
+}
+/* Fragen */
+fieldset {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+/* Frage-Text */
+legend {
+  color: blue;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<h1>Fragebogen zu Bad USB</h1>
+<!--<form action="/submit_form" method="post"> -->
+<form id="meinFormular">
+    <label for="vorname">Vorname:</label>
+    <input id="vorname" value="Max">
+    <label for="nachname">Nachname:</label>
+    <input id="nachname" value="Muster">
+    <fieldset>
+        <legend>Frage 1: Was ist ein BAD USB?</legend>
+        <input type="checkbox" id="1a" name="Frage 1" value="a">
+        <label for="1a">Ein USB-Stick, der nicht funktioniert</label><br>
+        <input type="checkbox" id="1b" name="Frage 1" value="b">
+        <label for="1b">Ein USB-Stick, der Daten stiehlt</label><br>
+        <input type="checkbox" id="1c" name="Frage 1" value="c">
+        <label for="1c">Ein USB-Stick, der Malware auf einem Computer installiert, wenn er eingesteckt wird</label><br>
+        <input type="checkbox" id="1d" name="Frage 1" value="d">
+        <label for="1d">Ein bösartiges USB Gerät, welches Schaden verursachen soll</label><br>
+    </fieldset>
+    <fieldset>       
+        <legend>Frage 2: Wie kann ein BAD USB verwendet werden?</legend>
+        <input type="checkbox" id="2a" name="Frage 2" value="a">
+        <label for="2a">Um einen Computer aufzuladen</label><br>
+        <input type="checkbox" id="2b" name="Frage 2" value="b">
+        <label for="2b">Um Daten zu übertragen</label><br>
+        <input type="checkbox" id="2c" name="Frage 2" value="c">
+        <label for="2c">Um einen Computer zu infizieren</label><br>
+        <input type="checkbox" id="2d" name="Frage 2" value="d">
+        <label for="2d">Um Musik zu hören</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Frage 3: Kann ein BAD USB erkannt werden, bevor er eingesteckt wird?</legend>
+        <input type="checkbox" id="3a" name="Frage 3" value="a">
+        <label for="3a">Ja, immer</label><br>
+        <input type="checkbox" id="3b" name="Frage 3" value="b">
+        <label for="3b">Nein, nie</label><br>
+        <input type="checkbox" id="3c" name="Frage 3" value="c">
+        <label for="3c">Nur mit spezieller Hardware</label><br>
+        <input type="checkbox" id="3d" name="Frage 3" value="d">
+        <label for="3d">Nur mit spezieller Software</label><br>
+    </fieldset>
+    <fieldset>        
+        <legend>Frage 4: Kann ein BAD USB einen Computer infizieren, wenn dieser ...</legend>
+        <input type="checkbox" id="4a" name="Frage 4" value="a">
+        <label for="4a">ausgeschaltet ist.</label><br>
+        <input type="checkbox" id="4b" name="Frage 4" value="b">
+        <label for="4b">im Ruhezustand ist.</label><br>
+        <input type="checkbox" id="4c" name="Frage 4" value="c">
+        <label for="4c">angeschaltet ist. </label><br>
+        <input type="checkbox" id="4d" name="Frage 4" value="d">
+        <label for="4d">gesperrt ist.</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Frage 5: Kann ein BAD USB Daten von einem Computer stehlen?</legend>
+        <input type="checkbox" id="5a" name="Frage 5" value="a">
+        <label for="5a">Ja</label><br>
+        <input type="checkbox" id="5b" name="Frage 5" value="b">
+        <label for="5b">Nein</label><br>
+        <input type="checkbox" id="5c" name="Frage 5" value="c">
+        <label for="5c">Nur, wenn der Computer mit dem Internet verbunden ist</label><br>
+        <input type="checkbox" id="5d" name="Frage 5" value="d">
+        <label for="5d">Nur, wenn der Computer nicht mit dem Internet verbunden ist</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Frage 6: Kann ein BAD USB einen Computer zerstören?</legend>
+        <input type="checkbox" id="6a" name="Frage 6" value="a">
+        <label for="6a">Ja</label><br>
+        <input type="checkbox" id="6b" name="Frage 6" value="b">
+        <label for="6b">Nein</label><br>
+        <input type="checkbox" id="6c" name="Frage 6" value="c">
+        <label for="6c">Nur, wenn der Computer alt ist</label><br>
+        <input type="checkbox" id="6d" name="Frage 6" value="d">
+        <label for="6d">Nur, wenn der Computer neu is</label><br>
+    </fieldset>
+    <fieldset>        
+        <legend>Frage 7: Kann man mit BAD USB ein Smartphone infizieren?</legend>
+        <input type="checkbox" id="7a" name="Frage 7" value="a">
+        <label for="7a">Ja</label><br>
+        <input type="checkbox" id="7b" name="Frage 7" value="b">
+        <label for="7b">Nein</label><br>
+        <input type="checkbox" id="7c" name="Frage 7" value="c">
+        <label for="7c">Nur, wenn das Smartphone eingeschaltet ist</label><br>
+        <input type="checkbox" id="7d" name="Frage 7" value="d">
+        <label for="7d">Nur, wenn das Smartphone ausgeschaltet ist</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Frage 8: Kann ein BAD USB einen Computer infizieren, der mit einem Antivirenprogramm geschützt ist?</legend>
+        <input type="checkbox" id="8a" name="Frage 8" value="a">
+        <label for="8a">Ja</label><br>
+        <input type="checkbox" id="8b" name="Frage 8" value="b">
+        <label for="8b">Nein</label><br>
+        <input type="checkbox" id="8c" name="Frage 8" value="c">
+        <label for="8c">Nur, wenn das Antivirenprogramm veraltet ist</label><br>
+        <input type="checkbox" id="8d" name="Frage 8" value="d">
+        <label for="8d"> Nur, wenn das Antivirenprogramm nicht aktiv ist</label><br>
+    </fieldset>  
+    <!--<input type="submit" value="Absenden">-->
+    <button onclick="zeigeErgebnisse()">Absenden</button>
+    <!-- Ein div Element mit den augewählten Antworten
+    Die richtigen Antworten sind: 1d, (2b,2c), 3b, (4b,4c,4d), 5a, 6a, 7c, 8a -->
+    <div id="ergebnisse"></div>
+</form> 
+<script>
+// Eine Funktion, die die ausgewählten Werte aus den Checkboxen abruft und unter dem Formular anzeigt
+function zeigeErgebnisse() {
+    let formular = document.getElementById('meinFormular');
+    // Verhindere die Standardaktion des Formulars
+    event.preventDefault();    
+    let ausgabe = document.getElementById('ergebnisse');
+    let vorname = document.getElementById('vorname');
+    let nachname = document.getElementById('nachname');
+    // Setze den Inhalt von ausgabe auf
+    ausgabe.innerHTML = "Antworten von  "+vorname.value+" "+nachname.value+": <br>";
+    // Durchlaufe alle Elemente des Formulars
+    for (let i = 0; i < formular.length; i++) {
+        let element = formular.elements[i];
+        // Überprüfe, ob das Element eine checkbox- oder Checkbox ist und ob es ausgewählt ist
+        if ((element.type === 'checkbox') && element.checked) {
+        // Füge den Wert und die Frage-ID an den Inhalt von ausgabe an, gefolgt von einem Zeilenumbruch
+        ausgabe.innerHTML += element.name + ": " + element.value + "<br>";
+        }
+    }
+  // Zeige das div Element mit der ID ergebnisse an
+  ausgabe.style.display = "block";
+}
+</script>
+</form>
+</body>
+</html>
