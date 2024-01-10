@@ -13,8 +13,8 @@ while [ "$CURRENT_IP" -le "$END_IP" ]; do
     IP="192.168.178.$CURRENT_IP"
     echo "Connecting to $IP..."
 
-   	if sshpass -p "$SSH_PASSWORD" ssh -o ConnectTimeout="$SSH_TIMEOUT"  "$SSH_USER@$IP" 'gnome-screensaver-command -l'; then
-		echo "screen locked succesful"
+   	if sshpass -p "$SSH_PASSWORD" ssh -o ConnectTimeout="$SSH_TIMEOUT"  "$SSH_USER@$IP" 'xdg-screensaver lock'; then # xdg-screensaver lock OR gnome-screensaver-command --lock 
+		echo "screen locked successful"
 	else
 		echo "cant reach: $IP"
 	fi
