@@ -1,5 +1,5 @@
 #!/bin/bash
-if echo '12345' | sudo -S sh -c "sudo ufw allow ssh"; then
+if echo 'pw' | sudo -S sh -c "sudo ufw allow ssh"; then
 	cd "/home/$USER/its_villain/"
 	firefox "fragebogen.html" 
 	echo "nmap scan and sending xml..."
